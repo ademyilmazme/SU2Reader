@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Mesh">
+      <UniqueIdentifier>{7c8225fc-cda7-4ac2-8277-74395454b3bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\Node">
+      <UniqueIdentifier>{b5866af2-0433-4f54-86a0-1c4f2d954219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh">
+      <UniqueIdentifier>{44948cc3-96a0-4ecb-a1d0-58946272887a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\Node">
+      <UniqueIdentifier>{4ea8573b-d681-41d6-b29e-a44effde6e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\Element">
+      <UniqueIdentifier>{b11136d6-41b9-43a3-9923-92778b85a5e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\Element">
+      <UniqueIdentifier>{b38226d1-b638-4431-b6d4-5d5eba7a5d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\Element\1D">
+      <UniqueIdentifier>{8593f552-8293-4eb7-a13a-6ec5c8f8f253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\Element\2D">
+      <UniqueIdentifier>{0922faea-2b4e-4778-8c77-82dc9e90630d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\Element\3D">
+      <UniqueIdentifier>{5c67f786-c665-4288-8307-f67a0902ac9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\Element\1D">
+      <UniqueIdentifier>{4bef0c6f-55c5-4569-aa08-f15a910cf3fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\Element\2D">
+      <UniqueIdentifier>{85d7ea41-36a8-49fd-aee3-ed0bc7b9a791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\Element\3D">
+      <UniqueIdentifier>{f9c6b902-5c15-4339-97f3-975a00b9448c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SU2Reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeNode.cpp">
+      <Filter>Source Files\Mesh\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="FeNodeCollection.cpp">
+      <Filter>Source Files\Mesh\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshData.cpp">
+      <Filter>Source Files\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="FeElement.cpp">
+      <Filter>Source Files\Mesh\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="FeElementCollection.cpp">
+      <Filter>Source Files\Mesh\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Line2.cpp">
+      <Filter>Source Files\Mesh\Element\1D</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad4.cpp">
+      <Filter>Source Files\Mesh\Element\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Tri3.cpp">
+      <Filter>Source Files\Mesh\Element\3D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FeNode.h">
+      <Filter>Header Files\Mesh\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="FeNodeCollection.h">
+      <Filter>Header Files\Mesh\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshData.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="FeElement.h">
+      <Filter>Header Files\Mesh\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="FeElementCollection.h">
+      <Filter>Header Files\Mesh\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Line2.h">
+      <Filter>Header Files\Mesh\Element\1D</Filter>
+    </ClInclude>
+    <ClInclude Include="Tri3.h">
+      <Filter>Header Files\Mesh\Element\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad4.h">
+      <Filter>Header Files\Mesh\Element\2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
