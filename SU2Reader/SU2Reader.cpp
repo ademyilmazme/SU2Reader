@@ -11,9 +11,10 @@ int main()
     //creta object from meshdata
     MeshData meshData;
 
-    string su2FilePath = "\\repos\\SU2Reader\\TestFile\\t1.su2";
+    string su2FilePath = "C:\\Users\\yilmaz\\source\\repos\\SU2Reader\\TestFile\\t1.su2";
     meshData.ReadSU2File(su2FilePath);
     FeNode* node = meshData.GetNode(1);
+    FeElement* element = meshData.GetElement(1);
     
     int ali = 2;
 }

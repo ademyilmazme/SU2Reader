@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include "Tri3.h"
 
 void MeshData::AddNode(FeNode node)
 {
@@ -46,8 +47,8 @@ void MeshData::ReadSU2File(std::string filename)
     }
 
     ReadNodes(lines);
-
-    }
+    ReadElements(lines);
+}
 
 void MeshData::ReadNodes(std::vector<std::string> lines)
 {
@@ -121,13 +122,13 @@ void MeshData::ReadElements(std::vector<std::string> lines)
 
             if (splittedLine[0] == "5") //Triangle
             {
-				int id = std::stoi(splittedLine[3]) + 1;
-				int node1 = std::stoi(splittedLine[0]) + 1;
-				int node2 = std::stoi(splittedLine[1]) + 1;
-				int node3 = std::stoi(splittedLine[2]) + 1;
+				int id = std::stoi(splittedLine[4]) + 1;
+				int node1 = std::stoi(splittedLine[1]) + 1;
+				int node2 = std::stoi(splittedLine[2]) + 1;
+				int node3 = std::stoi(splittedLine[3]) + 1;
                 std::vector<int> nodeIds = { node1, node2, node3 };
-				FeElement element(id,nodeIds);
-				AddElement(element);
+                Tri3 tri3(id, nodeIds);
+				AddElement(tri3);
 			}
 		}
 

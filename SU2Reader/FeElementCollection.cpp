@@ -13,14 +13,7 @@ void FeElementCollection::RemoveElement(int id)
 
 FeElement* FeElementCollection::GetElement(int id)
 {
-	for (int i = 0; i < this->size(); i++)
-	{
-		if (this->at(i).Id == id)
-		{
-			return &this->at(i);
-		}
-	}
-	return nullptr;
+	return &this->find(id)->second;
 }
 
 int FeElementCollection::GetElementCount()

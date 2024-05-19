@@ -76,7 +76,7 @@
       <Filter>Source Files\Mesh\Element\2D</Filter>
     </ClCompile>
     <ClCompile Include="Tri3.cpp">
-      <Filter>Source Files\Mesh\Element\3D</Filter>
+      <Filter>Source Files\Mesh\Element\2D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
